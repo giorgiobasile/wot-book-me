@@ -2,13 +2,7 @@
   "name": "webofthings-giorgio",
   "version": "0.1.0",
   "description": "A Node.js Web of Things server and gateway for Linux based devices such as the Raspberry Pi, Beaglebone, Edison or Samsung Artik",
-  "author": "Dominique Guinard, @domguinard",
-  "contributors": [
-    {
-      "name": "Giorgio Basile",
-      "email": "giorgio.basile4@gmail.com"
-    }
-  ],
+  "author": "Giorgio Basile, giorgio.basile4@gmail.com",
   "license": "Apache-2.0",
   "keywords": [
     "web of things",
@@ -36,7 +30,7 @@
     "body-parser": "^1.15.2",
     "cors": "^2.7.1",
     "express": "^4.13.3",
-    "msgpack": "^1.0.2",
+    "msgpack5": "^3.4.1",
     "node-json2html": "^1.0.0"
   },
   "optionalDependencies": {},
