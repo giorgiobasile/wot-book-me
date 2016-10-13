@@ -33,14 +33,15 @@
     "messagepack"
   ],
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.7.1",
     "express": "^4.13.3",
-    "cors": "^2.7.1"
+    "msgpack": "^1.0.2",
+    "node-json2html": "^1.0.0"
   },
-  "optionalDependencies": {
-
-  },
-  "devDependencies": {
-
-  },
-  "engines" : { "node" : ">=0.12.3 <5.0.0" }
+  "optionalDependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.12.3 <5.0.0"
+  }
 }
