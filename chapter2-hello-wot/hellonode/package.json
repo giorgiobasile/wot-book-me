@@ -1,0 +1,15 @@
+{
+  "name": "hellonode",
+  "version": "1.0.0",
+  "description": "Examples for the Web of Things Book",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Giorgio Basile",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.0.1",
+    "request": "^2.75.0"
+  }
+}

@@ -1,0 +1,21 @@
+Temperature: 23 Light: 16
+Temperature: 2 Light: 50
+Temperature: 19 Light: function getLight(){
+	request({url:serviceRootUrl + "/light", json:true}, function(err, resp, body){
+		if(err) throw err;
+		if(resp.statusCode === 200){
+			console.log(body);
+			var light = body.light;
+			return light;
+			//callback(null, light);		
+		}else{
+			return null;
+			//callback(null, null);
+		}
+	});
+}
+Temperature: 12 Light: undefined
+Temperature: 37 Light: undefined
+Temperature: 13 Light: undefined
+Temperature: 11 Light: 3
+Temperature: 18 Light: 31

@@ -1,0 +1,17 @@
+{
+  "name": "hello-npm",
+  "version": "0.0.1",
+  "description": "Experimenting with npm modules",
+  "main": "index.js",
+  "dependencies": {
+    "request": "^2.75.0"
+  },
+  "devDependencies": {
+    "mocha":"2.x.x"
+  },
+  "scripts": {
+    "test": "none"
+  },
+  "author": "Giorgio Basile <giorgio.basile4@gmail.com>",
+  "engine": "node >= 4.2.2"
+}
