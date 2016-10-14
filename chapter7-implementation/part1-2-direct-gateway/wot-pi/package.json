@@ -31,7 +31,8 @@
     "cors": "^2.7.1",
     "express": "^4.13.3",
     "msgpack5": "^3.4.1",
-    "node-json2html": "^1.0.0"
+    "node-json2html": "^1.0.0",
+    "ws": "^1.1.1"
   },
   "optionalDependencies": {},
   "devDependencies": {},
