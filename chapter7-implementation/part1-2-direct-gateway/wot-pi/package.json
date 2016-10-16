@@ -27,6 +27,7 @@
     "messagepack"
   ],
   "dependencies": {
+    "bl": "^1.1.2",
     "body-parser": "^1.15.2",
     "coap": "^0.18.0",
     "cors": "^2.7.1",
