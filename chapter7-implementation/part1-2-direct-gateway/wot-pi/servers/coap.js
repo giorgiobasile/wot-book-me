@@ -35,7 +35,7 @@ function respond(res, content) { //#F
 };
 
 
-interval = setInterval(function (){
+/*interval = setInterval(function (){
 	var req = coap.request('coap://localhost:5683/co2');
 	req.setOption('Accept','application/json');
 	 
@@ -44,4 +44,4 @@ interval = setInterval(function (){
 	});
 	 
 	req.end();
-}, 2000);
+}, 2000);*/

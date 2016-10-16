@@ -5,12 +5,13 @@ var httpServer = require('./servers/http'),
 var pirPlugin = require('./plugins/internal/pirPlugin'),
 	ledsPlugin = require('./plugins/internal/ledsPlugin'),
 	dhtPlugin = require('./plugins/internal/DHT22SensorPlugin');
+	coapPlugin = require('./plugins/external/coapPlugin');
 
 
 pirPlugin.start({'simulate': true, 'frequency': 2000});
 ledsPlugin.start({'simulate': true, 'frequency': 10000});
 dhtPlugin.start({'simulate': true, 'frequency': 10000});
-
+coapPlugin.start({'simulate': false, 'frequency': 10000});
 
 var server = httpServer.listen(resources.pi.port, function(){
 	console.log('HTTP server started...');
