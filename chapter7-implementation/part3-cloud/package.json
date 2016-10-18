@@ -1,0 +1,14 @@
+{
+  "name": "wot-plug",
+  "description": "Examples for the Web of Things Book",
+  "author": "Dom Guinard <dom@guinard.org>",
+  "author": "Vlad Trifa <vladounet@gmail.com>",
+  "repository" : "https://github.com/giorgiobasile/wot-book-me.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "mqtt": "^1.5.0"
+  }
+}
