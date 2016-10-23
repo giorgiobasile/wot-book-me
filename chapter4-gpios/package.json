@@ -1,0 +1,11 @@
+{
+  "name": "wot-book-gpio",
+  "description": "Examples for the Web of Things Book",
+  "author": "Dominique Guinard <dom@guinard.org>",
+  "author": "Vlad Trifa <vladounet@gmail.com>",
+  "repository" : "https://github.com/giorgiobasile/wot-book-me.git",
+  "dependencies": {
+    "onoff": "^1.0.3"
+  },
+  "engine": "node >= 0.12.0"
+}
