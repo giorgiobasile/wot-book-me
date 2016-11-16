@@ -5,7 +5,8 @@
   "author": "Vlad Trifa <vladounet@gmail.com>",
   "repository" : "https://github.com/giorgiobasile/wot-book-me.git",
   "dependencies": {
-    "onoff": "^1.0.3"
+    "onoff": "^1.0.3",
+    "node-dht-sensor": "^0.0.8"
   },
   "engine": "node >= 0.12.0"
 }
