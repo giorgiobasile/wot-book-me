@@ -36,7 +36,10 @@
     "node-json2html": "^1.0.0",
     "ws": "^1.1.1"
   },
-  "optionalDependencies": {},
+  "optionalDependencies": {
+    "onoff":"^1.0.4",
+    "node-dht-sensor":"^0.0.8"
+  },
   "devDependencies": {},
   "engines": {
     "node": ">=0.12.3 <5.0.0"

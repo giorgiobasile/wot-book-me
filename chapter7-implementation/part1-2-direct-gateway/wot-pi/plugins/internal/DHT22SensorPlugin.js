@@ -25,7 +25,28 @@ exports.stop = function () {
 };
 
 function connectHardware() {
-	/* TODO */
+	var sensorDriver = require('node-dht-sensor');
+  var sensor = {
+    initialize: function () {
+      return sensorDriver.initialize(22, model.temperature.gpio);
+    },
+    read: function () {
+      var readout = sensorDriver.read();
+      model.temperature.value = parseFloat(readout.temperature.toFixed(2));
+      model.humidity.value = parseFloat(readout.humidity.toFixed(2));
+      showValue();
+
+      setTimeout(function () {
+        sensor.read();
+      }, localParams.frequency);
+    }
+  };
+  if (sensor.initialize()) {
+    console.info('Hardware %s sensor started!', pluginName);
+    sensor.read();
+  } else {
+    console.warn('Failed to initialize sensor!');
+  }
 };
 
 function simulate() {

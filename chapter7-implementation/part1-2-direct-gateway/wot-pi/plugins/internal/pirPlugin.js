@@ -24,7 +24,14 @@ exports.stop = function() {
 };
 
 function connectHardware() {
-	/* TODO */
+	var Gpio = require('onoff').Gpio;
+  sensor = new Gpio(model.gpio, 'in', 'both');
+  sensor.watch(function (err, value) {
+    if (err) exit(err);
+    model.value = !!value;
+    showValue();
+  });
+  console.info('Hardware %s sensor started!', pluginName);
 };
 
 function simulate() {
