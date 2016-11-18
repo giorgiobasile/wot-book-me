@@ -11,11 +11,10 @@ var pirPlugin = require('./plugins/internal/pirPlugin'),
 pirPlugin.start({'simulate': true, 'frequency': 2000});
 ledsPlugin.start({'simulate': true, 'frequency': 10000});
 dhtPlugin.start({'simulate': true, 'frequency': 10000});
-coapPlugin.start({'simulate': false, 'frequency': 10000});
+coapPlugin.start({'simulate': true, 'frequency': 10000});
 
 var server = httpServer.listen(resources.pi.port, function(){
 	console.log('HTTP server started...');
 	wsServer.listen(server);
 	console.info('Your WoT Pi is up and running on port %s', resources.pi.port);
 });
-
